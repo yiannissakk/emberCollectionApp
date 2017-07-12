@@ -9,6 +9,7 @@ export default Ember.Route.extend({
   },
   title() {
     let collectionName = this.modelFor('collections.collection').get('name');
-    return `${collectionName} products - Rock and Roll`;
+    return `${collectionName} products`;
   },
+
 });
