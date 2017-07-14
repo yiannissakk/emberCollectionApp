@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'collection-app',
+    modulePrefix: 'trouva-create-collections',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',

@@ -1,0 +1,11 @@
+{{#link-to 'products' class="button"}}
+    Back to products
+    {{/link-to}}
+      {{input type="text" class="new-collection" placeholder="New Collection" value=newName insert-newline="createCollection" }}
+      <button class="btn btn-primary btn-sm new-collection-button" {{action "createCollection"}}
+        disabled={{disabled}}>Add</button>
+
+{{#each model as |collection|}}
+        <div>{{collection.name}}
+        </div>
+    {{/each}}

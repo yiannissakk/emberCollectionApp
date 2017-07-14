@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model() {
+	model() {
     return this.store.findAll('collection');
   },
 
@@ -17,7 +17,7 @@ export default Ember.Route.extend({
       });
       return collection.save().then(function() {
         controller.set('newName', '');
-        route.transitionTo('collections.collection.products', collection);
+        //route.transitionTo('products.product.collections', product);
       });
     }
   }

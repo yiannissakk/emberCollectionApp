@@ -1,0 +1,25 @@
+<div class="col-md-4">
+  <div class="list-group">
+    <div class="list-group-item">
+
+    {{#link-to 'view-collections' class="button"}}
+    View Collections
+    {{/link-to}}
+    </div>
+    {{#each prods as |product|}}
+        <div>{{product.name}}
+        <select onchange={{action (action "selectCollection" product.id) value="target.value"}}>
+        {{#each colls as |collection|}}
+        <option value="{{collection.id}}">{{collection.name}}</option>
+        {{/each}}
+      </select>
+        </div>
+        <span class="pointer glyphicon glyphicon-chevron-right"></span>
+    {{/each}}
+  </div>
+</div>
+<div class="col-md-8">
+  <div class="list-group">
+    {{outlet}}
+  </div>
+</div>

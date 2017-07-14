@@ -6,7 +6,7 @@ export default Ember.Route.extend({
   		e.products.forEach(function(f) {
   			//console.log(f.name);
   			//console.log(f._id);
-  			console.log($.fn.jquery);
+  			//console.log($.fn.jquery);
   			self.store.push({
   				data: [{
 				      id: a,

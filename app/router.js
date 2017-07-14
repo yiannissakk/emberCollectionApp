@@ -7,11 +7,12 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('collections', function() {
-    this.route('collection', { path: ':collection_id' }, function() {
-      this.route('products');
+  this.route('products', function() {
+    this.route('product', { path: ':product_id' }, function() {
+      this.route('collections',{ path: ':collection_id' });
     });
   });
+  this.route('view-collections');
 });
 
 export default Router;
