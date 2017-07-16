@@ -2,6 +2,8 @@
 export default Ember.Route.extend({
   model() {
 
+    var self = this;
+
     //Commented code below is a script to delete all records of a model
 
     //self.store.findAll('product').then(
@@ -13,7 +15,6 @@ export default Ember.Route.extend({
     //});
 
     //read data from json file in public folder, then push in store as product models
-    var self = this;
   	var prods = Ember.$.ajax({url: ("/products.json"), type: 'GET', dataType: 'json', success: function(e) {
   		var a = 1;
   		e.products.forEach(function(f) {
