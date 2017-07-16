@@ -4,7 +4,7 @@ This README outlines the details of this Ember application.
 
 This repository is my first ever ember project. It is a single page application in which you can create collection objects, view product objects, add products to the collections and view a collection and its products.
 
-I have made a screencast of my working application (on 16/7/2017) and you can find it [here](https://www.youtube.com/edit?o=U&video_id=mPoLeKgoYqA)
+I have made a screencast of my working application (on 16/7/2017) and you can find it [here](https://www.youtube.com/watch?v=mPoLeKgoYqA)
 
 ## Prerequisites
 
