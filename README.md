@@ -1,7 +1,10 @@
-# trouva-create-collections
+# emberCollectionApp
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This README outlines the details of this Ember application.
+
+This repository is my first ever ember project. It is a single page application in which you can create collection objects, view product objects, add products to the collections and view a collection and its products.
+
+I have made a screencast of my working application (on 16/7/2017) and you can find it [here](https://www.youtube.com/watch?v=mPoLeKgoYqA)
 
 ## Prerequisites
 
@@ -11,40 +14,16 @@ You will need the following things properly installed on your computer.
 * [Node.js](https://nodejs.org/) (with NPM)
 * [Ember CLI](https://ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
+* [emberPouch](https://www.npmjs.com/package/ember-pouch) (with NPM)
+* [emberData](https://www.npmjs.com/package/ember-data) (with NPM)
 
 ## Installation
 
 * `git clone <repository-url>` this repository
-* `cd trouva-create-collections`
+* `cd emberCollectionApp`
 * `npm install`
 
 ## Running / Development
 
 * `ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
