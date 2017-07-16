@@ -1,11 +1,28 @@
-{{#link-to 'products' class="button"}}
-    Back to products
-    {{/link-to}}
-      {{input type="text" class="new-collection" placeholder="New Collection" value=newName insert-newline="createCollection" }}
-      <button class="btn btn-primary btn-sm new-collection-button" {{action "createCollection"}}
-        disabled={{disabled}}>Add</button>
+<h3>View & Add Collections</h3>
 
+{{#link-to 'products' class="button"}}
+Go to View Product List & Add to Collections
+{{/link-to}}
+<br>
+<br>
+Add a collection
+<br>
+{{input type="text" class="new-collection" placeholder="New Collection" value=newName insert-newline="createCollection" }}
+<button class="btn btn-primary btn-sm new-collection-button" {{action "createCollection"}} disabled={{disabled}}>Add</button>
+<br>
+<br>
+Click a collection and view its products below
+<ul>
+{{outlet}}
+<br>
 {{#each model as |collection|}}
-        <div>{{collection.name}}
-        </div>
-    {{/each}}
+<div>
+<li>
+{{#link-to "view-collections.view-collection" collection.id class="button"}}
+{{collection.name}}
+{{/link-to}}
+</li>
+
+</div>
+{{/each}}
+</ul>
